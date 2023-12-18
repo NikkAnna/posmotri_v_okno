@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  width: 0;
+}
+
 html {
   block-size: 100%;
 }
@@ -13,9 +17,10 @@ html {
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: 'Fira Sans Condensed', 'Arial', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  padding: 133px 30px;
 }
 
 h1,
@@ -35,4 +40,116 @@ fieldset {
 ul,
 ol {
   list-style: none;
+}
+
+a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.content {
+  margin: 0px auto;
+  inline-size: 1140px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: flex-end;
+}
+
+.result__video-container {
+  block-size: 386px;
+  inline-size: 711px;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.result__video {
+  block-size: 100%;
+  inline-size: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-form__fieldset-title {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.content__details {
+  max-block-size: 100%;
+  max-inline-size: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.title {
+  font-family: Oswald, 'Arial', sans-serif;
+  font-size: 75px;
+  font-weight: 700;
+  line-height: 0.94;
+  text-transform: uppercase;
+}
+
+.content__accent {
+  color: #545050;
+}
+
+.content__list {
+  max-block-size: 300px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+}
+
+.content__list-item {
+  block-size: 107px;
+  inline-size: 394px;
+}
+
+.content__video-card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content__video-card-description-container {
+  flex: 1 0 auto;
+}
+
+.content__video-card-title {
+  font-family: Oswald, 'Arial', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.content__video-card-description {
+  font-size: 18px;
+  line-height: 0.9;
+}
+
+.content__video-card-thumbnail {
+  block-size: 103px;
+  inline-size: 194px;
+  object-fit: cover;
+  object-position: center;
 }
