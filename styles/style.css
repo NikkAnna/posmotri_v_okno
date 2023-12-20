@@ -65,7 +65,7 @@ a {
   inline-size: 1140px;
   display: flex;
   justify-content: space-between;
-  gap: 30px;
+  gap: 27px;
   align-items: flex-end;
 }
 
@@ -150,16 +150,15 @@ a {
   inline-size: 19px;
   block-size: 19px;
   border: 1px solid #FFF;
-  position: relative;
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   content: '';
   inline-size: 15px;
   block-size: 15px;
-  position: absolute;
   background: #fff;
-  inset: 1px;
+  display: block;
+  margin: 1px;
 }
 
 .button {
